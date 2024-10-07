@@ -1,0 +1,20 @@
+<h3>This is home page!</h3>
+<hr>
+<label>Choose your country:</label>
+<select>
+    <option>Uzbekistan</option>
+    <option>Indonesia</option>
+    <option>Israel</option>
+    <option>Iran</option>
+    <option>Falastin</option>
+    <option>Lebanon</option>
+    <option>Korea</option>
+</select>
+
+<br>
+<label>Current time: </label>
+<span>{{ now_time }}</span>
+
+{% for student in students %}
+    <p>{{ student.id }}. {{ student.ism }}</p>
+{% endfor %}
